@@ -1,0 +1,9 @@
+{
+	"name": "currencyXchg",
+	"description": "COMPS381F - Currency Exchange",
+	"version": "0.0.1",
+	"scripts" : {
+		"start": "node currencyXchgHttp2.js"
+	},
+	"engine": "*"
+}

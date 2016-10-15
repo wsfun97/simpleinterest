@@ -1,0 +1,9 @@
+{
+	"name": "simpleinterest0",
+	"description": "COMPS381F - Simple Interest",
+	"version": "0.0.1",
+	"scripts" : {
+		"start": "node simpleinterest0.js"
+	},
+	"engine": "*"
+}

@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Simple Interest</title>
+</head>
+<body>
+
+<form action="http://localhost:8099/simpleinterest.html" method="get">
+	Principal: <input type="text" name="p"><br>
+	Rate:<input type="text" name="r"><br>
+	Time:<input type="text" name="t"><br>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
