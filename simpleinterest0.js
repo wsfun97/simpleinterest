@@ -23,7 +23,7 @@ var server = http.createServer(function (req,res) {
 	if(parsedURL.pathname=='/simpleinterest'){
 
 		var obj = new SimpleInterest(queryAsObject.p, queryAsObject.r, queryAsObject.t);
-		if (queryAsObject.format == "html") {//the result format is html
+		//if (queryAsObject.format == "html") {//the result format is html
 			res.writeHead(200, {"Content-Type" : "text/html"});
 			res.write('<html><head><title>SimpleInterest</title></head>');
 			res.write('<body><H1>Principal: ' + obj.principal + '</H1>');
@@ -31,12 +31,12 @@ var server = http.createServer(function (req,res) {
 			res.write('<body><H1>Time: ' + obj.time + '</H1>');
 			res.write('<body><H1>Interest: ' + obj.interest + '</H1>');
 			res.end('</body></html>');
-		}
-		else{//the result format is json, e.g. {"principal":"1000","rate":"0.05","time":"10","interest":500}
+		//}
+		/*else{//the result format is json, e.g. {"principal":"1000","rate":"0.05","time":"10","interest":500}
 			res.writeHead(200, {"Content-Type" : "application/json"});
 			//The JSON.stringify() method converts a JavaScript value to a JSON string
     			res.end(JSON.stringify(obj));
-		}
+		}*/
 
 	}else{
 		res.writeHead(404, {"Content-Type": "text/plain"});
